@@ -1,7 +1,7 @@
 <?php
 
 use App\Contracts\Entities\ConnectionContracts;
-use App\Contracts\Entities\LibraryContracts;
+use App\Contracts\Entities\LibraryContract;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -20,20 +20,20 @@ class CreateLibrariesTable extends Migration
 
             $table->bigIncrements('id');
 
-            $table->string(LibraryContracts::FIELD_NAME);
-            $table->string(LibraryContracts::FIELD_NAME_KZ);
-            $table->string(LibraryContracts::FIELD_ADDRESS);
-            $table->string(LibraryContracts::FIELD_ADDRESS_KZ);
-            $table->string(LibraryContracts::FIELD_RUKOVODITEL_KZ);
-            $table->string(LibraryContracts::FIELD_RUKOVODITEL);
-            $table->string(LibraryContracts::FIELD_SCHEDULE_KZ);
-            $table->string(LibraryContracts::FIELD_SCHEDULE);
-            $table->string(LibraryContracts::FIELD_VIDY_USLUG_KZ);
-            $table->string(LibraryContracts::FIELD_VIDY_USLUG);
-            $table->string(LibraryContracts::FIELD_GEOPOSITION);
-            $table->string(LibraryContracts::FIELD_CONTACT_TELEFON);
-            $table->string(LibraryContracts::FIELD_EMAIL);
-            $table->string(LibraryContracts::FIELD_OFFICIAL_SITE);
+            $table->string(LibraryContract::FIELD_NAME);
+            $table->string(LibraryContract::FIELD_NAME_KZ);
+            $table->string(LibraryContract::FIELD_ADDRESS);
+            $table->string(LibraryContract::FIELD_ADDRESS_KZ);
+            $table->string(LibraryContract::FIELD_RUKOVODITEL_KZ);
+            $table->string(LibraryContract::FIELD_RUKOVODITEL);
+            $table->string(LibraryContract::FIELD_SCHEDULE_KZ);
+            $table->string(LibraryContract::FIELD_SCHEDULE);
+            $table->string(LibraryContract::FIELD_VIDY_USLUG_KZ);
+            $table->string(LibraryContract::FIELD_VIDY_USLUG);
+            $table->string(LibraryContract::FIELD_GEOPOSITION);
+            $table->string(LibraryContract::FIELD_CONTACT_TELEFON);
+            $table->string(LibraryContract::FIELD_EMAIL);
+            $table->string(LibraryContract::FIELD_OFFICIAL_SITE);
 
             $table->timestamps();
         });

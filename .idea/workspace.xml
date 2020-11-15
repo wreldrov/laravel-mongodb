@@ -121,7 +121,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Contracts/Entities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -129,9 +129,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app/Contracts/Entities" />
     </key>
   </component>
@@ -149,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605445025244</updated>
-      <workItem from="1605445026773" duration="3070000" />
+      <workItem from="1605445026773" duration="5918000" />
     </task>
     <servers />
   </component>
@@ -161,6 +165,26 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1605447709718" />
+    <state x="425" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605455394131">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="425" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.822@0.23.1440.822" timestamp="1605455394131" />
+    <state width="958" height="209" key="GridCell.Tab.0.bottom" timestamp="1605455952443">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="958" height="209" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1605455952443" />
+    <state width="958" height="209" key="GridCell.Tab.0.center" timestamp="1605455952443">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="958" height="209" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1605455952443" />
+    <state width="958" height="209" key="GridCell.Tab.0.left" timestamp="1605455952442">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="958" height="209" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1605455952442" />
+    <state width="958" height="209" key="GridCell.Tab.0.right" timestamp="1605455952443">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="958" height="209" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1605455952443" />
     <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1605447549946">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -169,13 +193,17 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="348" y="162" key="NewPhpClassDialog/0.23.1440.822@0.23.1440.822" timestamp="1605446327123" />
-    <state x="418" y="184" width="604" height="490" key="find.popup" timestamp="1605452389591">
+    <state x="221" y="68" key="SettingsEditor" timestamp="1605453510931">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="418" y="184" width="604" height="490" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605452389591" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605452705317">
+    <state x="221" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1605453510931" />
+    <state x="418" y="184" width="604" height="548" key="find.popup" timestamp="1605456314558">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605452705317" />
+    <state x="418" y="184" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605456314558" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605455795525">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605455795525" />
   </component>
 </project>
