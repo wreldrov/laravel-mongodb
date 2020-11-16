@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/library', 'LibraryController@index');
+Route::resource('library', 'LibraryController');
