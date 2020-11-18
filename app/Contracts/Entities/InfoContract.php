@@ -2,9 +2,10 @@
 
 namespace App\Contracts\Entities;
 
-interface LibraryContract extends HasTimestampContract
+interface InfoContract extends HasTimestampContract
 {
     public const FIELD_ID              = '_id';
+    public const FIELD_TYPE            = 'type';
     public const FIELD_NAME_KZ         = 'name_kz';
     public const FIELD_NAME            = 'name';
     public const FIELD_ADDRESS         = 'address';
@@ -22,6 +23,7 @@ interface LibraryContract extends HasTimestampContract
 
 
     public const FIELD_LIST = [
+        self::FIELD_TYPE,
         self::FIELD_NAME_KZ,
         self::FIELD_NAME,
         self::FIELD_ADDRESS,
@@ -37,4 +39,6 @@ interface LibraryContract extends HasTimestampContract
         self::FIELD_EMAIL,
         self::FIELD_OFFICIAL_SITE,
     ];
+
+    public const TYPE_LIBRARY = 'library';
 }

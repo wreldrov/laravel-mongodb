@@ -1,7 +1,7 @@
 <?php
 
-use App\Contracts\Entities\LibraryContract;
-use App\Library;
+use App\Contracts\Entities\InfoContract;
+use App\Info;
 use Illuminate\Database\Seeder;
 
 class LibrarySeeder extends Seeder
@@ -1449,9 +1449,16 @@ class LibrarySeeder extends Seeder
         
         foreach ($data as $row) {
             $row    = (array) $row;
-            $values = array_only($row, LibraryContract::FIELD_LIST);
+            $values = array_only($row, InfoContract::FIELD_LIST);
 
-            Library::create($values);
+            Info::create(
+                array_merge(
+                    $values,
+                    [
+                        InfoContract::FIELD_TYPE => InfoContract::TYPE_LIBRARY,
+                    ]
+                )
+            );
         }
     }
 }

@@ -11,9 +11,6 @@
 |
 */
 
-use App\Contracts\Entities\LibraryContract;
-use App\Library;
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,3 +18,7 @@ Route::get('/', function () {
 Route::get('library/search', 'LibraryController@search')->name('library.search');
 Route::get('library/{library}/delete', 'LibraryController@delete')->name('library.delete');
 Route::resource('library', 'LibraryController')->except(['destroy']);
+
+Route::get('park/search', 'ParkController@search')->name('park.search');
+Route::get('park/{library}/delete', 'ParkController@delete')->name('park.delete');
+Route::resource('park', 'LibraryController')->except(['destroy']);

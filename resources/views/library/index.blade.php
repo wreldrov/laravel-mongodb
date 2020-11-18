@@ -107,19 +107,19 @@
                                 @foreach($libraries as $row)
                                     <tr>
                                         <td>{{ $loop->index+1 }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_NAME_KZ } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_NAME } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_ADDRESS_KZ } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_ADDRESS } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_RUKOVODITEL_KZ } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_RUKOVODITEL } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_SCHEDULE_KZ } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_SCHEDULE } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_VIDY_USLUG_KZ } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_VIDY_USLUG } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_EMAIL } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_OFFICIAL_SITE } }}</td>
-                                        <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_CONTACT_TELEFON } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_NAME_KZ } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_NAME } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_ADDRESS_KZ } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_ADDRESS } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_RUKOVODITEL_KZ } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_RUKOVODITEL } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_SCHEDULE_KZ } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_SCHEDULE } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_VIDY_USLUG_KZ } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_VIDY_USLUG } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_EMAIL } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_OFFICIAL_SITE } }}</td>
+                                        <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_CONTACT_TELEFON } }}</td>
                                         <td>
                                             <a style="display: inline" href="http://project.test/library/{{ $row->id  }}/edit">
                                                 <span class="fa fa-edit"></span>

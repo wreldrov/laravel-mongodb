@@ -2,47 +2,48 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Contracts\Entities\LibraryContract;
-use App\Library;
+use App\Contracts\Entities\InfoContract;
+use App\Info;
 use Illuminate\Http\Request;
 
 class LibraryController extends Controller
 {
     public function index()
     {
-        $libraries = Library::all();
+        $libraries = Info
+            ::query()
+            ->where(InfoContract::FIELD_TYPE, InfoContract::TYPE_LIBRARY)
+            ->get()
+        ;
 
         return view('library.index', compact('libraries'));
     }
 
     public function create()
     {
-        $libraries = Library::all();
-
-        return view('library.create', compact('libraries'));
+        return view('library.create');
     }
 
     public function store(Request $request)
     {
-        Library::create(array_only($request->all(), LibraryContract::FIELD_LIST));
+        Info::create(array_only($request->all(), InfoContract::FIELD_LIST));
 
         return redirect()->route('library.index');
     }
 
-    public function edit(Library $library)
+    public function edit(Info $library)
     {
         return view('library.edit', compact('library'));
     }
 
-    public function update(Library $library, Request $request)
+    public function update(Info $library, Request $request)
     {
-        $library->update(array_only($request->all(), LibraryContract::FIELD_LIST));
+        $library->update(array_only($request->all(), InfoContract::FIELD_LIST));
 
         return redirect()->route('library.index');
     }
 
-    public function delete(Library $library)
+    public function delete(Info $library)
     {
         $library->delete();
 
@@ -54,13 +55,19 @@ class LibraryController extends Controller
         $name_kz = $request->get('name_kz');
         $name_ru = $request->get('name_ru');
 
-        $libraries = Library::query()
-            ->when($name_kz, function ($query) use ($name_kz) {
-                $query->where(LibraryContract::FIELD_NAME_KZ, 'LIKE', '%'. $name_kz .'%');
-            })
-            ->when($name_ru, function ($query) use ($name_ru) {
-                $query->where(LibraryContract::FIELD_NAME, 'LIKE', '%'. $name_ru .'%');
-            })
+        $libraries = Info
+            ::query()
+            ->where(InfoContract::FIELD_TYPE, InfoContract::TYPE_LIBRARY)
+            ->when($name_kz, function ($query) use ($name_kz)
+                {
+                    $query->where(InfoContract::FIELD_NAME_KZ, 'LIKE', '%' . $name_kz . '%');
+                }
+            )
+            ->when($name_ru, function ($query) use ($name_ru)
+                {
+                    $query->where(InfoContract::FIELD_NAME, 'LIKE', '%' . $name_ru . '%');
+                }
+            )
             ->get()
         ;
 
@@ -96,7 +103,7 @@ class LibraryController extends Controller
             [
                 'data'         => $data,
                 'search_count' => $libraries->count(),
-                'total'        => Library::query()->count(),
+                'total'        => Info::query()->count(),
             ]
         );
     }

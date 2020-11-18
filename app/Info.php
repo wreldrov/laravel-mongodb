@@ -3,14 +3,14 @@
 namespace App;
 
 use App\Contracts\Entities\ConnectionContracts;
-use App\Contracts\Entities\LibraryContract;
+use App\Contracts\Entities\InfoContract;
 //use Illuminate\Database\Eloquent\Model;
 use Jenssegers\Mongodb\Eloquent\Model;
 
-class Library extends Model
+class Info extends Model
 {
     protected $connection = ConnectionContracts::MONGO_DB_CONNECTION;
-    protected $collection = 'libraries';
-    protected $primaryKey = LibraryContract::FIELD_ID;
-    protected $fillable   = LibraryContract::FIELD_LIST;
+    protected $collection = 'infos';
+    protected $primaryKey = InfoContract::FIELD_ID;
+    protected $fillable   = InfoContract::FIELD_LIST;
 }

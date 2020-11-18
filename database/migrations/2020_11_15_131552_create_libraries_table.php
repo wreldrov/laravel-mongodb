@@ -1,7 +1,7 @@
 <?php
 
 use App\Contracts\Entities\ConnectionContracts;
-use App\Contracts\Entities\LibraryContract;
+use App\Contracts\Entities\InfoContract;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -16,24 +16,25 @@ class CreateLibrariesTable extends Migration
     public function up()
     {
         Schema::connection(ConnectionContracts::MONGO_DB_CONNECTION)
-            ->create('libraries', function (Blueprint $table) {
+            ->create('infos', function (Blueprint $table) {
 
             $table->bigIncrements('id');
 
-            $table->string(LibraryContract::FIELD_NAME);
-            $table->string(LibraryContract::FIELD_NAME_KZ);
-            $table->string(LibraryContract::FIELD_ADDRESS);
-            $table->string(LibraryContract::FIELD_ADDRESS_KZ);
-            $table->string(LibraryContract::FIELD_RUKOVODITEL_KZ);
-            $table->string(LibraryContract::FIELD_RUKOVODITEL);
-            $table->string(LibraryContract::FIELD_SCHEDULE_KZ);
-            $table->string(LibraryContract::FIELD_SCHEDULE);
-            $table->string(LibraryContract::FIELD_VIDY_USLUG_KZ);
-            $table->string(LibraryContract::FIELD_VIDY_USLUG);
-            $table->string(LibraryContract::FIELD_GEOPOSITION);
-            $table->string(LibraryContract::FIELD_CONTACT_TELEFON);
-            $table->string(LibraryContract::FIELD_EMAIL);
-            $table->string(LibraryContract::FIELD_OFFICIAL_SITE);
+            $table->string(InfoContract::FIELD_TYPE);
+            $table->string(InfoContract::FIELD_NAME);
+            $table->string(InfoContract::FIELD_NAME_KZ);
+            $table->string(InfoContract::FIELD_ADDRESS);
+            $table->string(InfoContract::FIELD_ADDRESS_KZ);
+            $table->string(InfoContract::FIELD_RUKOVODITEL_KZ);
+            $table->string(InfoContract::FIELD_RUKOVODITEL);
+            $table->string(InfoContract::FIELD_SCHEDULE_KZ);
+            $table->string(InfoContract::FIELD_SCHEDULE);
+            $table->string(InfoContract::FIELD_VIDY_USLUG_KZ);
+            $table->string(InfoContract::FIELD_VIDY_USLUG);
+            $table->string(InfoContract::FIELD_GEOPOSITION);
+            $table->string(InfoContract::FIELD_CONTACT_TELEFON);
+            $table->string(InfoContract::FIELD_EMAIL);
+            $table->string(InfoContract::FIELD_OFFICIAL_SITE);
 
             $table->timestamps();
         });
@@ -46,6 +47,6 @@ class CreateLibrariesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('libraries');
+        Schema::dropIfExists('infos');
     }
 }
