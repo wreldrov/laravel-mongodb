@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('library/search', 'LibraryController@search')->name('library.search');
-Route::resource('library', 'LibraryController');
+Route::get('library/{library}/delete', 'LibraryController@delete')->name('library.delete');
+Route::resource('library', 'LibraryController')->except(['destroy']);

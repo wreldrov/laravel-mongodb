@@ -34,7 +34,7 @@
 
         <!-- DataTales Example -->
         <div class="col-md-12 row">
-            {{ csrf_token() }}
+            {{ csrf_field() }}
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary"></h6>
@@ -58,6 +58,7 @@
                                     <th>E-mail</th>
                                     <th>Официальный сайт</th>
                                     <th>Телефон</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -76,6 +77,7 @@
                                     <th>E-mail</th>
                                     <th>Официальный сайт</th>
                                     <th>Телефон</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -83,6 +85,7 @@
                                     <th></th>
                                     <th><input id="name_kz_search"></th>
                                     <th><input id="name_ru_search"></th>
+                                    <th></th>
                                     <th></th>
                                     <th></th>
                                     <th></th>
@@ -113,6 +116,14 @@
                                         <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_EMAIL } }}</td>
                                         <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_OFFICIAL_SITE } }}</td>
                                         <td>{{ $row->{ \App\Contracts\Entities\LibraryContract::FIELD_CONTACT_TELEFON } }}</td>
+                                        <td>
+                                            <a style="display: inline" href="http://project.test/library/{{ $row->id  }}/edit">
+                                                <span class="fa fa-edit"></span>
+                                            </a>
+                                            <a style="display: inline" href="http://project.test/library/{{ $row->id  }}/delete">
+                                                <span class="fa fa-trash"></span>
+                                            </a>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -131,7 +142,13 @@
     <script>
         $(document).ready(function () {
             $('#name_kz_search').on('change', function () {
-
+                search();
+            });
+            $('#name_ru_search').on('change', function () {
+                search();
+            });
+            function search()
+            {
                 var kz_val = $('#name_kz_search').val();
                 var ru_val = $('#name_ru_search').val();
 
@@ -148,7 +165,7 @@
                         $('#table-body').html(data);
                     }
                 });
-            });
+            }
         });
     </script>
 @endsection

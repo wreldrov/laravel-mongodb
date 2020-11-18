@@ -30,6 +30,25 @@ class LibraryController extends Controller
         return redirect()->route('library.index');
     }
 
+    public function edit(Library $library)
+    {
+        return view('library.edit', compact('library'));
+    }
+
+    public function update(Library $library, Request $request)
+    {
+        $library->update(array_only($request->all(), LibraryContract::FIELD_LIST));
+
+        return redirect()->route('library.index');
+    }
+
+    public function delete(Library $library)
+    {
+        $library->delete();
+
+        return redirect()->route('library.index');
+    }
+
     public function search(Request $request)
     {
         $name_kz = $request->get('name_kz');
@@ -62,6 +81,14 @@ class LibraryController extends Controller
                      '<td>'. $row->{ LibraryContract::FIELD_EMAIL } .'</td>' .
                      '<td>'. $row->{ LibraryContract::FIELD_OFFICIAL_SITE } .'</td>' .
                      '<td>'. $row->{ LibraryContract::FIELD_CONTACT_TELEFON } .'</td>' .
+                     '<td>' .
+                     '<a style="display: inline" href="http://project.test/library/'. $row->{ LibraryContract::FIELD_ID } .'/edit">' .
+                     '<span class="fa fa-edit"></span>' .
+                     '</a>' .
+                     '<a style="display: inline" href="http://project.test/library/'. $row->{ LibraryContract::FIELD_ID } .'/delete">' .
+                     '<span class="fa fa-trash"></span>' .
+                     '</a>' .
+                     '</td>'.
                      '</tr>';
         }
 

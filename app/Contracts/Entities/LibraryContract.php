@@ -9,8 +9,8 @@ interface LibraryContract extends HasTimestampContract
     public const FIELD_NAME            = 'name';
     public const FIELD_ADDRESS         = 'address';
     public const FIELD_ADDRESS_KZ      = 'address_kz';
-    public const FIELD_RUKOVODITEL_KZ  = 'f.n.o_rukovoditelya_kz';
-    public const FIELD_RUKOVODITEL    = 'f.n.o_rukovoditelya';
+    public const FIELD_RUKOVODITEL_KZ  = 'rukovoditelya_kz';
+    public const FIELD_RUKOVODITEL     = 'rukovoditelya';
     public const FIELD_SCHEDULE_KZ     = 'schedule_kz';
     public const FIELD_SCHEDULE        = 'schedule';
     public const FIELD_VIDY_USLUG_KZ   = 'vidy_uslug_kz';
