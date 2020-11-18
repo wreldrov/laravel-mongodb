@@ -19,15 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="" />
+    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/libraries.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -138,8 +149,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mongo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/library" />
@@ -176,6 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605445025244</updated>
       <workItem from="1605445026773" duration="5918000" />
+      <workItem from="1605691504008" duration="2351000" />
     </task>
     <servers />
   </component>
@@ -183,6 +197,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -222,13 +245,13 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1605453510931" />
-    <state x="418" y="184" width="604" height="548" key="find.popup" timestamp="1605523318935">
+    <state x="418" y="184" width="604" height="548" key="find.popup" timestamp="1605692473535">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="418" y="184" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605523318935" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605522766162">
+    <state x="418" y="184" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605692473535" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605692898315">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605522766162" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605692898315" />
   </component>
 </project>

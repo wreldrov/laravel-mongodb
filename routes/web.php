@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('library/search', 'LibraryController@search')->name('library.search');
 Route::resource('library', 'LibraryController');
