@@ -16,9 +16,37 @@ Route::get('/', function () {
 });
 
 Route::get('library/search', 'LibraryController@search')->name('library.search');
-Route::get('library/{library}/delete', 'LibraryController@delete')->name('library.delete');
-Route::resource('library', 'LibraryController')->except(['destroy']);
+Route::get('library/{info}/delete', 'LibraryController@delete')->name('library.delete');
+Route::resource('library', 'LibraryController',
+                [
+                    'parameters' => [
+                        'theatre' => 'info'
+                    ]
+                ]
+)
+     ->except(['destroy']);
+
 
 Route::get('park/search', 'ParkController@search')->name('park.search');
-Route::get('park/{library}/delete', 'ParkController@delete')->name('park.delete');
-Route::resource('park', 'ParkController')->except(['destroy']);
+Route::get('park/{info}/delete', 'ParkController@delete')->name('park.delete');
+Route::resource('park', 'ParkController',
+                [
+                    'parameters' => [
+                        'theatre' => 'info'
+                    ]
+                ]
+)
+     ->except(['destroy']);
+
+
+Route::get('theatre/search', 'TheatreController@search')->name('theatre.search');
+Route::get('theatre/{info}/delete', 'TheatreController@delete')->name('theatre.delete');
+Route::resource('theatre', 'TheatreController',
+                [
+                    'parameters' => [
+                        'theatre' => 'info'
+                    ]
+                ]
+)
+    ->except(['destroy']);
+

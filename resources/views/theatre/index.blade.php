@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Данные о парках')
+@section('title', 'Данные о театрах')
 
 @section('content')
 
@@ -17,14 +17,14 @@
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Данные о парках</h1>
         <p class="mb-4">
-            В данном наборе содержится данные о парках, график работы, адрес,
-            контактные телефоны, виды услуг, геокоординаты, электронная почта и Ф.И.О руководителей.
+            В данном наборе содержится данные о театре, график работы, адрес, контактные телефоны,
+            виды услуг, геокоординаты, электронная почта и Ф.И.О руководителя.
         </p>
 
         <div class="col-md-12 row" style="margin: 20px auto;">
             <div style="display: block;">
                 <div style="display: inline-block;">
-                    <a class="col-lg-offset-5 btn btn-success" href="{{ route('park.create') }}">
+                    <a class="col-lg-offset-5 btn btn-success" href="{{ route('theatre.create') }}">
                         Создать
                     </a>
                 </div>
@@ -120,10 +120,10 @@
                                         <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_OFFICIAL_SITE } }}</td>
                                         <td>{{ $row->{ \App\Contracts\Entities\InfoContract::FIELD_CONTACT_TELEFON } }}</td>
                                         <td>
-                                            <a style="display: inline" href="http://project.test/park/{{ $row->id  }}/edit">
+                                            <a style="display: inline" href="http://project.test/theatre/{{ $row->id  }}/edit">
                                                 <span class="fa fa-edit"></span>
                                             </a>
-                                            <a style="display: inline" href="http://project.test/park/{{ $row->id  }}/delete">
+                                            <a style="display: inline" href="http://project.test/theatre/{{ $row->id  }}/delete">
                                                 <span class="fa fa-trash"></span>
                                             </a>
                                         </td>
@@ -156,7 +156,7 @@
                 var ru_val = $('#name_ru_search').val();
 
                 $.ajax({
-                    url: "{{ route('park.search') }}",
+                    url: "{{ route('theatre.search') }}",
                     method: 'GET',
                     data: {
                         name_kz: kz_val,
