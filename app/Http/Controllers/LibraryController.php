@@ -92,6 +92,12 @@ class LibraryController extends Controller
                      '</tr>';
         }
 
-        return response()->json($data);
+        return response()->json(
+            [
+                'data'         => $data,
+                'search_count' => $libraries->count(),
+                'total'        => Library::query()->count(),
+            ]
+        );
     }
 }

@@ -41,6 +41,10 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
+                        <p>
+                            Найдено: <span id="search_count">{{ $libraries->count() }}</span> из
+                            <span id="total">{{ $libraries->count() }}</span>
+                        </p>
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
@@ -162,7 +166,9 @@
                     },
                     dataType: 'json',
                     success: function (data) {
-                        $('#table-body').html(data);
+                        $('#table-body').html(data.data);
+                        $('#search_count').html(data.search_count);
+                        $('#total').html(data.total);
                     }
                 });
             }

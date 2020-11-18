@@ -19,15 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="seeder">
-      <change afterPath="$PROJECT_DIR$/resources/views/library/edit.blade.php" afterDir="false" />
+    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="edit delete functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Entities/LibraryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Entities/LibraryContract.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/LibrarySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/LibrarySeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +186,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605445025244</updated>
       <workItem from="1605445026773" duration="5918000" />
-      <workItem from="1605691504008" duration="4235000" />
+      <workItem from="1605691504008" duration="4605000" />
     </task>
     <task id="LOCAL-00001" summary="search">
       <created>1605693900654</created>
@@ -207,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605694413521</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit delete functions">
+      <created>1605696154540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605696154540</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +231,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="search" />
     <MESSAGE value="seeder" />
-    <option name="LAST_COMMIT_MESSAGE" value="seeder" />
+    <MESSAGE value="edit delete functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit delete functions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605447709718">
@@ -268,17 +271,21 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1605453510931" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605694415710">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605696156069">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605694415710" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605696156069" />
+    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605696287736">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.822@0.23.1440.822" timestamp="1605696287736" />
     <state x="418" y="184" width="604" height="548" key="find.popup" timestamp="1605692473535">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="418" y="184" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605692473535" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605695534322">
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605696199911">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605695534322" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605696199911" />
   </component>
 </project>
