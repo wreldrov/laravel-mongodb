@@ -1450,6 +1450,7 @@ class LibrarySeeder extends Seeder
         foreach ($data as $row) {
             $row    = (array) $row;
             $values = array_only($row, InfoContract::FIELD_LIST);
+            $values = array_map('trim', $values);
 
             Info::create(
                 array_merge(

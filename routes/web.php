@@ -21,4 +21,4 @@ Route::resource('library', 'LibraryController')->except(['destroy']);
 
 Route::get('park/search', 'ParkController@search')->name('park.search');
 Route::get('park/{library}/delete', 'ParkController@delete')->name('park.delete');
-Route::resource('park', 'LibraryController')->except(['destroy']);
+Route::resource('park', 'ParkController')->except(['destroy']);

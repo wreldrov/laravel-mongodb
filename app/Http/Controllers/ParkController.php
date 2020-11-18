@@ -6,50 +6,50 @@ use App\Contracts\Entities\InfoContract;
 use App\Info;
 use Illuminate\Http\Request;
 
-class LibraryController extends Controller
+class ParkController extends Controller
 {
-    protected $type = InfoContract::TYPE_LIBRARY;
+    protected $type = InfoContract::TYPE_PARK;
 
     public function index()
     {
-        $libraries = Info
+        $infos = Info
             ::query()
             ->where(InfoContract::FIELD_TYPE, $this->type)
             ->get()
         ;
 
-        return view('library.index', compact('libraries'));
+        return view('park.index', compact('infos'));
     }
 
     public function create()
     {
-        return view('library.create');
+        return view('park.create');
     }
 
     public function store(Request $request)
     {
         Info::create(array_only($request->all(), InfoContract::FIELD_LIST));
 
-        return redirect()->route('library.index');
+        return redirect()->route('park.index');
     }
 
-    public function edit(Info $library)
+    public function edit(Info $info)
     {
-        return view('library.edit', compact('library'));
+        return view('park.edit', compact('info'));
     }
 
-    public function update(Info $library, Request $request)
+    public function update(Info $info, Request $request)
     {
-        $library->update(array_only($request->all(), InfoContract::FIELD_LIST));
+        $info->update(array_only($request->all(), InfoContract::FIELD_LIST));
 
-        return redirect()->route('library.index');
+        return redirect()->route('park.index');
     }
 
-    public function delete(Info $library)
+    public function delete(Info $info)
     {
-        $library->delete();
+        $info->delete();
 
-        return redirect()->route('library.index');
+        return redirect()->route('park.index');
     }
 
     public function search(Request $request)
@@ -57,7 +57,7 @@ class LibraryController extends Controller
         $name_kz = $request->get('name_kz');
         $name_ru = $request->get('name_ru');
 
-        $libraries = Info
+        $infos = Info
             ::query()
             ->where(InfoContract::FIELD_TYPE, $this->type)
             ->when($name_kz, function ($query) use ($name_kz)
@@ -74,7 +74,7 @@ class LibraryController extends Controller
         ;
 
         $data = '';
-        foreach ($libraries as $key => $row) {
+        foreach ($infos as $key => $row) {
             $data .= '<tr>' .
                      '<td>'. ($key+1) .'</td>' .
                      '<td>'. $row->{ InfoContract::FIELD_NAME_KZ } .'</td>' .
@@ -104,7 +104,7 @@ class LibraryController extends Controller
         return response()->json(
             [
                 'data'         => $data,
-                'search_count' => $libraries->count(),
+                'search_count' => $infos->count(),
                 'total'        => Info::query()
                                       ->where(InfoContract::FIELD_TYPE, $this->type)
                                       ->count(),

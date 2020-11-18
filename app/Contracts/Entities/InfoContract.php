@@ -41,4 +41,5 @@ interface InfoContract extends HasTimestampContract
     ];
 
     public const TYPE_LIBRARY = 'library';
+    public const TYPE_PARK    = 'park';
 }

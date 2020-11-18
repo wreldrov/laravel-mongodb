@@ -22,6 +22,7 @@
             <form action="{{ route('library.store') }}" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div style="margin: 40px 20px;">
+                    <input type="hidden" class="form-control" name="type" value="library">
                     <div class="col-md-12 row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="form-group row">
