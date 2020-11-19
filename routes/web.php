@@ -56,3 +56,9 @@ Route::get('kyzylorda-info/search', 'KyzylordaInfoController@search')->name('kyz
 Route::get('kyzylorda-info/{kyzylordaInfo}/delete', 'KyzylordaInfoController@delete')->name('kyzylorda-info.delete');
 Route::resource('kyzylorda-info', 'KyzylordaInfoController')->except(['destroy']);
 
+
+
+Route::get('zony-otdykha/search', 'ZonyOtdykhaController@search')->name('zony-otdykha.search');
+Route::get('zony-otdykha/{zonyOtdykha}/delete', 'ZonyOtdykhaController@delete')->name('zony-otdykha.delete');
+Route::resource('zony-otdykha', 'ZonyOtdykhaController')->except(['destroy']);
+

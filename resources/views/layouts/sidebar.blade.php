@@ -6,7 +6,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Культура и отдых</div>
     </a>
 
     <!-- Divider -->
@@ -31,7 +31,12 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route('kyzylorda-info.index') }}">
             <i class="fas fa-fw fa-table"></i>
-            <span>Средства массовой информации Кызылординской области</span></a>
+            <span>Средства массовой информации</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('zony-otdykha.index') }}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Зоны отдыха</span></a>
     </li>
 
     <!-- Divider -->

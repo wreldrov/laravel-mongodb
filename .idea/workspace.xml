@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,13 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="kyzylorda info CRUD">
+    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="kyzylorda info CRUD fix">
+      <change afterPath="$PROJECT_DIR$/app/Contracts/Entities/ZonyOtdykhaContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ZonyOtdykhaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ZonyOtdykha.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_055010_create_zony_otdykhas_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ZonyOtdykhaSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/zony-otdykha/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/zony-otdykha/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/zony-otdykha/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KyzylordaInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KyzylordaInfoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/KyzylordaInfoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/KyzylordaInfoSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kyzylorda-info/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kyzylorda-info/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kyzylorda-info/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -157,7 +164,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/zony-otdykha" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -169,11 +176,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/zony-otdykha" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$/app/Contracts/Entities" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,7 +199,7 @@
       <updated>1605445025244</updated>
       <workItem from="1605445026773" duration="5918000" />
       <workItem from="1605691504008" duration="8793000" />
-      <workItem from="1605760030111" duration="3615000" />
+      <workItem from="1605760030111" duration="6537000" />
     </task>
     <task id="LOCAL-00001" summary="search">
       <created>1605693900654</created>
@@ -257,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605764285147</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="kyzylorda info CRUD fix">
+      <created>1605764812506</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605764812506</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +300,8 @@
     <MESSAGE value="theatre CRUD" />
     <MESSAGE value="kyzylorda info" />
     <MESSAGE value="kyzylorda info CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="kyzylorda info CRUD" />
+    <MESSAGE value="kyzylorda info CRUD fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="kyzylorda info CRUD fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605447709718">
@@ -297,10 +312,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="425" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.822@0.23.1440.822" timestamp="1605716503058" />
-    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605761336753">
+    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605765384876">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.822@0.23.1440.822" timestamp="1605761336753" />
+    <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.822@0.23.1440.822" timestamp="1605765384876" />
     <state x="100" y="123" width="1240" height="622" key="DiffContextDialog" timestamp="1605764326727">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -329,29 +344,29 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="348" y="162" key="NewPhpClassDialog/0.23.1440.822@0.23.1440.822" timestamp="1605446327123" />
-    <state x="441" y="143" key="RollbackChangesDialog" timestamp="1605716957329">
+    <state x="441" y="143" key="RollbackChangesDialog" timestamp="1605772914081">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="441" y="143" key="RollbackChangesDialog/0.23.1440.822@0.23.1440.822" timestamp="1605716957329" />
+    <state x="441" y="143" key="RollbackChangesDialog/0.23.1440.822@0.23.1440.822" timestamp="1605772914081" />
     <state x="221" y="68" key="SettingsEditor" timestamp="1605453510931">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1605453510931" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605764286975">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605764821386">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605764286975" />
-    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605763734986">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605764821386" />
+    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605765947119">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.822@0.23.1440.822" timestamp="1605763734986" />
+    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.822@0.23.1440.822" timestamp="1605765947119" />
     <state x="230" y="112" width="604" height="548" key="find.popup" timestamp="1605717868354">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="230" y="112" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605717868354" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605764309385">
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605772871576">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605764309385" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605772871576" />
   </component>
 </project>
