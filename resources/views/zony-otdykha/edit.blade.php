@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Средства массовой информации Кызылординской области')
+@section('title', 'Зоны отдыха Кызылординской области')
 
 @section('content')
 

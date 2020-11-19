@@ -32,7 +32,7 @@ Route::get('park/{info}/delete', 'ParkController@delete')->name('park.delete');
 Route::resource('park', 'ParkController',
                 [
                     'parameters' => [
-                        'theatre' => 'info'
+                        'park' => 'info'
                     ]
                 ]
 )
