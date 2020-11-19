@@ -22,19 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="kyzylorda info CRUD fix">
-      <change afterPath="$PROJECT_DIR$/app/Contracts/Entities/ZonyOtdykhaContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ZonyOtdykhaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ZonyOtdykha.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_055010_create_zony_otdykhas_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ZonyOtdykhaSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/zony-otdykha/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/zony-otdykha/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/zony-otdykha/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="zony otdykha CRUD">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +188,7 @@
       <updated>1605445025244</updated>
       <workItem from="1605445026773" duration="5918000" />
       <workItem from="1605691504008" duration="8793000" />
-      <workItem from="1605760030111" duration="6537000" />
+      <workItem from="1605760030111" duration="6857000" />
     </task>
     <task id="LOCAL-00001" summary="search">
       <created>1605693900654</created>
@@ -271,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605764812506</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="zony otdykha CRUD">
+      <created>1605773117960</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605773117960</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +297,8 @@
     <MESSAGE value="kyzylorda info" />
     <MESSAGE value="kyzylorda info CRUD" />
     <MESSAGE value="kyzylorda info CRUD fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="kyzylorda info CRUD fix" />
+    <MESSAGE value="zony otdykha CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="zony otdykha CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605447709718">
@@ -352,10 +349,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1605453510931" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605764821386">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605773120027">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605764821386" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605773120027" />
     <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605765947119">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -364,9 +361,9 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="230" y="112" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605717868354" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605772871576">
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605773921206">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605772871576" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605773921206" />
   </component>
 </project>

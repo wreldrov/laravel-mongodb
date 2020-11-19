@@ -45,9 +45,9 @@ class LibraryController extends Controller
         return redirect()->route('library.index');
     }
 
-    public function delete(Info $library)
+    public function delete(Info $info)
     {
-        $library->delete();
+        $info->delete();
 
         return redirect()->route('library.index');
     }
