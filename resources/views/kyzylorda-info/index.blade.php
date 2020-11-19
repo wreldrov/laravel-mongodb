@@ -83,9 +83,9 @@
                             <tbody>
                                 <tr>
                                     <th></th>
+                                    <th></th>
                                     <th><input id="name_kz_search"></th>
                                     <th><input id="name_ru_search"></th>
-                                    <th></th>
                                     <th></th>
                                     <th></th>
                                     <th></th>

@@ -1,7 +1,7 @@
 <?php
 
 use App\Contracts\Entities\KyzylordaInfoContract;
-use App\Info;
+use App\KyzylordaInfo;
 use Illuminate\Database\Seeder;
 
 class KyzylordaInfoSeeder extends Seeder
@@ -2309,7 +2309,7 @@ class KyzylordaInfoSeeder extends Seeder
             $values = array_only($row, KyzylordaInfoContract::FIELD_LIST);
             $values = array_map('trim', $values);
 
-            Info::create($values);
+            KyzylordaInfo::create($values);
         }
     }
 }

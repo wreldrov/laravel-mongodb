@@ -25,7 +25,7 @@ class KyzylordaInfoController extends Controller
 
     public function store(Request $request)
     {
-        Info::create(array_only($request->all(), KyzylordaInfoContract::FIELD_LIST));
+        KyzylordaInfo::create(array_only($request->all(), KyzylordaInfoContract::FIELD_LIST));
 
         return redirect()->route('kyzylorda-info.index');
     }

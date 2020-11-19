@@ -26,6 +26,12 @@
                     <div class="col-md-12 row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">Язык</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" name="yazik" value="{{ $kyzylordaInfo->yazik }}" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
                                 <label class="col-lg-3 col-form-label">Название (КЗ)</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control" name="namekz" value="{{ $kyzylordaInfo->namekz }}" required>

@@ -28,6 +28,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Театры</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('kyzylorda-info.index') }}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Средства массовой информации Кызылординской области</span></a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

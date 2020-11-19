@@ -19,14 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="kyzylorda info">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/KyzylordaInfoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/index.blade.php" afterDir="false" />
+    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="kyzylorda info CRUD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Entities/KyzylordaInfoContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Entities/KyzylordaInfoContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_044031_create_kyzylorda_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_044031_create_kyzylorda_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KyzylordaInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KyzylordaInfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/KyzylordaInfoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/KyzylordaInfoSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kyzylorda-info/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kyzylorda-info/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kyzylorda-info/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +192,7 @@
       <updated>1605445025244</updated>
       <workItem from="1605445026773" duration="5918000" />
       <workItem from="1605691504008" duration="8793000" />
-      <workItem from="1605760030111" duration="3149000" />
+      <workItem from="1605760030111" duration="3615000" />
     </task>
     <task id="LOCAL-00001" summary="search">
       <created>1605693900654</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605761508156</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="kyzylorda info CRUD">
+      <created>1605764285147</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605764285147</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +285,8 @@
     <MESSAGE value="park CRUD" />
     <MESSAGE value="theatre CRUD" />
     <MESSAGE value="kyzylorda info" />
-    <option name="LAST_COMMIT_MESSAGE" value="kyzylorda info" />
+    <MESSAGE value="kyzylorda info CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="kyzylorda info CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605447709718">
@@ -293,10 +301,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="458" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.822@0.23.1440.822" timestamp="1605761336753" />
-    <state x="100" y="123" width="1240" height="622" key="DiffContextDialog" timestamp="1605761392444">
+    <state x="100" y="123" width="1240" height="622" key="DiffContextDialog" timestamp="1605764326727">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="100" y="123" width="1240" height="622" key="DiffContextDialog/0.23.1440.822@0.23.1440.822" timestamp="1605761392444" />
+    <state x="100" y="123" width="1240" height="622" key="DiffContextDialog/0.23.1440.822@0.23.1440.822" timestamp="1605764326727" />
     <state width="958" height="209" key="GridCell.Tab.0.bottom" timestamp="1605455952443">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -329,10 +337,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="221" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1605453510931" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605719129318">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605764286975">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605719129318" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605764286975" />
     <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605763734986">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -341,9 +349,9 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="230" y="112" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605717868354" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605763753095">
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605764309385">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605763753095" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605764309385" />
   </component>
 </project>
