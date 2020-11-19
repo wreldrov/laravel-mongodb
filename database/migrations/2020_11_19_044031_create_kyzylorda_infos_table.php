@@ -20,8 +20,6 @@ class CreateKyzylordaInfosTable extends Migration
             $table->string(KyzylordaInfoContract::FIELD_YAZIK);
             $table->string(KyzylordaInfoContract::FIELD_NAME_KZ);
             $table->string(KyzylordaInfoContract::FIELD_NAME_RU);
-            $table->string(KyzylordaInfoContract::FIELD_NAMES_RU);
-            $table->string(KyzylordaInfoContract::FIELD_NAMES_KZ);
             $table->string(KyzylordaInfoContract::FIELD_ADDRESS_KZ);
             $table->string(KyzylordaInfoContract::FIELD_ADDRESS_RU);
             $table->string(KyzylordaInfoContract::FIELD_PERIOD_KZ);

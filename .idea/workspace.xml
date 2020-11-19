@@ -19,13 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="theatre CRUD">
-      <change afterPath="$PROJECT_DIR$/app/Contracts/Entities/KyzylordaInfoContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/KyzylordaInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_044031_create_kyzylorda_infos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/KyzylordaInfoSeeder.php" afterDir="false" />
+    <list default="true" id="31264a31-dba5-4042-8b2c-22e80fa35580" name="Default Changelist" comment="kyzylorda info">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/KyzylordaInfoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/kyzylorda-info/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Entities/KyzylordaInfoContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Entities/KyzylordaInfoContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_044031_create_kyzylorda_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_044031_create_kyzylorda_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +157,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeds" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,10 +169,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/seeds" />
-      <recent name="$PROJECT_DIR$/app/Contracts/Entities" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/database/seeds" />
+      <recent name="$PROJECT_DIR$/app/Contracts/Entities" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
@@ -190,7 +192,7 @@
       <updated>1605445025244</updated>
       <workItem from="1605445026773" duration="5918000" />
       <workItem from="1605691504008" duration="8793000" />
-      <workItem from="1605760030111" duration="995000" />
+      <workItem from="1605760030111" duration="3149000" />
     </task>
     <task id="LOCAL-00001" summary="search">
       <created>1605693900654</created>
@@ -241,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605719126932</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="kyzylorda info">
+      <created>1605761508156</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605761508156</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +277,8 @@
     <MESSAGE value="library -&gt; info" />
     <MESSAGE value="park CRUD" />
     <MESSAGE value="theatre CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="theatre CRUD" />
+    <MESSAGE value="kyzylorda info" />
+    <option name="LAST_COMMIT_MESSAGE" value="kyzylorda info" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605447709718">
@@ -323,17 +333,17 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1605719129318" />
-    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605761367550">
+    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605763734986">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.822@0.23.1440.822" timestamp="1605761367550" />
+    <state x="343" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.822@0.23.1440.822" timestamp="1605763734986" />
     <state x="230" y="112" width="604" height="548" key="find.popup" timestamp="1605717868354">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="230" y="112" width="604" height="548" key="find.popup/0.23.1440.822@0.23.1440.822" timestamp="1605717868354" />
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605718873698">
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1605763753095">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605718873698" />
+    <state x="385" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1605763753095" />
   </component>
 </project>

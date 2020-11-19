@@ -50,3 +50,9 @@ Route::resource('theatre', 'TheatreController',
 )
     ->except(['destroy']);
 
+
+
+Route::get('kyzylorda-info/search', 'KyzylordaInfoController@search')->name('kyzylorda-info.search');
+Route::get('kyzylorda-info/{info}/delete', 'KyzylordaInfoController@delete')->name('kyzylorda-info.delete');
+Route::resource('kyzylorda-info', 'KyzylordaInfoController')->except(['destroy']);
+
